@@ -1,7 +1,46 @@
 .homePageHeader {
-    background-color: #007bff;
-    color: rgb(206, 166, 166);
-    padding: 20px;
+    background-color: #d9cdcc;
+    color: rgb(228, 213, 213);
+    padding: 10px;
     text-align: center;
   }
+  .homePageContentIntro{
+    align-items:left;
+    padding-left:210px;
+    padding-right:210px;
+    text-align-last:left;
+    padding-top: 30px;
+    color:black;
+  }
   
+  .homeShortInfoWrap{
+    padding-top: 37px;
+    align-items:left;
+    text-align:left;
+    padding-left:15px;
+    padding-right:15px;
+
+  }
+  .homeShortInfo{
+    align-items:left;
+    text-align-last:left;
+    padding-bottom:18px;
+  }
+  .homeLongInfoWrap{
+    padding-top: 18px;
+    align-items:left;
+    text-align:left;
+  }
+  .homeFreetimeWrap{
+    padding-top:30px;
+    
+  }
+  .homeFreetime{
+    padding-bottom:30px;
+  }
+  .homeFreeTitle{
+    padding-bottom:30px;
+  }
+  .homeFreeList{
+    padding-top:30px;
+  }

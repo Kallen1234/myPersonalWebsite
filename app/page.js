@@ -1,95 +1,60 @@
-import Image from 'next/image'
-import styles from './page.module.css'
-
-export default function Home() {
+"use client";
+import React from "react";
+import styles from "./styles/homePage.module.css";
+import Navbar from "../components/Navbar";
+function HomePage() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className={styles.homeContainer}>
+      <Navbar />
+      <div className={styles.homePageHeader}>
+        <div className={styles.homePageContentIntro}>
+          <div className={styles.homeName}>
+            <h1>
+              Hey, I'm <i>Kallen Schulz</i>
+            </h1>
+            <div className={styles.homeIntroStatus}>
+              <h2>Student + Developer</h2>
+            </div>
+          </div>
+          <div className={styles.homeShortInfoWrap}>
+            <div className={styles.homeShortInfo}>
+              <h2>
+                I'm a 19 year old student from Dallas, Texas. I am currently
+                going to school at Collin Community college take all the classes
+                I can before I transfer to The University of North Texas.{" "}
+              </h2>
+            </div>
+          </div>
+          <div className={styles.homeLongInfoWrap}>
+            <div className={styles.homeLongInfo}>
+              <h2>
+                I am interested in <i>software engineering</i> (mainly web &
+                mobile), deep learning, design (UI & UX), and cybersecurity. I
+                desire to make,create, and Innovate products using my knowledge.
+                I also enjoy watching sports and movies.
+              </h2>
+            </div>
+          </div>
+          <div className={styles.homeFreetimeWrap}>
+            <div className={styles.homeFreetime}>
+              <div className={styles.homeFreeTitle}>
+                <h2>In my free time I enjoy...</h2>
+                <div className={styles.homeFreeList}>
+                  <ul>
+                    <li>
+                      <h3>Working on personal projects</h3>
+                    </li>
+                    <li>Watching sports</li>
+                    <li>hanging out with friends and family</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+    </div>
+  );
 }
+
+export default HomePage;
