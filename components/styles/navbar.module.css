@@ -1,13 +1,51 @@
-
-
-
-.NavOuter{
-display: flex;
-flex-wrap: wrap;
-max-width: 940px;
-width: 100%;
-padding-left: 50px;;
-padding-right: 2rem;
-padding-top: 2rem;
-gap: 25px;
-}
+/* Navbar.module.css */
+.NavOuter {
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  .NavList {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .NavItem {
+    text-align: center;
+    padding: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .NavItem:hover {
+    background-color: #555;
+    transform: scale(1.05);
+  }
+  
+  .NavLink {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px; 
+    border-radius: 5px; 
+  }
+  
+  .NavIcon {
+    font-size: 24px;
+    margin-right: 8px; 
+  }
+  
+ 
+  @media (max-width: 600px) {
+    .NavLink {
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .NavIcon {
+      margin-right: 8px;
+    }
+  }
+  

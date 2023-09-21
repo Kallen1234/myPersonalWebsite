@@ -44,8 +44,13 @@ function HomePage() {
                     <li>
                       <h3>Working on personal projects</h3>
                     </li>
-                    <li>Watching sports</li>
-                    <li>hanging out with friends and family</li>
+
+                    <li>
+                      <h3>Watching sports primarily the NFL</h3>
+                    </li>
+                    <li>
+                      <h3>hanging out with friends and family</h3>
+                    </li>
                   </ul>
                 </div>
               </div>

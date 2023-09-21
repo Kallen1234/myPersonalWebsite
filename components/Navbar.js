@@ -1,66 +1,38 @@
-import styled from "styled-components";
+import React from "react";
 import Link from "next/link";
+import { HiHome, HiFolder, HiOutlineTerminal } from "react-icons/hi";
 import styles from "./styles/Navbar.module.css";
-import {
-  HiHome,
-  HiFolder,
-  HiBriefcase,
-  HiGlobeAlt,
-  HiOutlineTerminal,
-} from "react-icons/hi";
-const NavContainer = styled.nav`
-  background-color: #333;
-  color: white;
-  align-items: center;
-  ul {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    justify-content: center;
-    align-items: center;
-  }
-
-  li {
-    margin: 0 1rem;
-  }
-
-  a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-`;
 
 const Navbar = () => {
   return (
-    <NavContainer>
-      <div className={styles.NavOuter}>
-        <ul>
-          <div className={styles.NavHomeCon}>
-            <li>
-              <div className={styles.NavIcon}>
-                <HiHome />
-              </div>
-
-              <Link href="/">Home</Link>
-            </li>
-          </div>
-          <li>
-            <div className={styles.NavIcon}>
-              <HiFolder />
-            </div>
-            <Link href="/about">About</Link>
-          </li>
-
-          <li>
-            <div className={styles.NavIcon}>
-              <HiOutlineTerminal />
-            </div>
-            <Link href="/projects">Projects</Link>
-          </li>
-        </ul>
-      </div>
-    </NavContainer>
+    <div className={styles.NavOuter}>
+      <ul className={styles.NavList}>
+        <li className={styles.NavItem}>
+          <Link href="/">
+            <span className={styles.NavLink}>
+              <HiHome className={styles.NavIcon} />
+              Home
+            </span>
+          </Link>
+        </li>
+        <li className={styles.NavItem}>
+          <Link href="/about">
+            <span className={styles.NavLink}>
+              <HiFolder className={styles.NavIcon} />
+              About
+            </span>
+          </Link>
+        </li>
+        <li className={styles.NavItem}>
+          <Link href="/projects">
+            <span className={styles.NavLink}>
+              <HiOutlineTerminal className={styles.NavIcon} />
+              Projects
+            </span>
+          </Link>
+        </li>
+      </ul>
+    </div>
   );
 };
 
